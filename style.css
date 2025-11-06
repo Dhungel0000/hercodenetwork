@@ -1,0 +1,135 @@
+/* Globale Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header-Bereich */
+header {
+    background: #505050;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #bbb 1px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #d81b60; /* Pink wie beim SQL-Projekt */
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ccc;
+    font-weight: bold;
+}
+
+/* Hauptinhaltsbereich */
+#main {
+    padding: 20px;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #ddd;
+    color: #333;
+}
+
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #505050;
+    text-align: center;
+}
+
+/* Media Queries für Responsive Design */
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    article#main-col,
+    #sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #sidebar {
+        margin-top: 0;
+    }
+}
+
+.logo-img {
+  width: 200px;
+  height: auto;
+}
+
+.projekte-list {
+  list-style: none;
+  padding: 0;
+}
+.projekte-list li {
+  margin-bottom: 24px;
+}
+
+/* Entferne die Projekt-spezifischen Farben und Rahmen */
+.projekt-python, .projekt-sql {
+  background: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+}
